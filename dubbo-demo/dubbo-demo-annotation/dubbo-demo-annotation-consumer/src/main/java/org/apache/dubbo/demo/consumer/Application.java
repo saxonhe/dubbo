@@ -37,6 +37,7 @@ public class Application {
         String hello = service.sayHello("world");
         System.out.println("result :" + hello);
         System.out.println("result :" + happy);
+        System.out.println("result :" + world);
     }
 
     @Configuration
