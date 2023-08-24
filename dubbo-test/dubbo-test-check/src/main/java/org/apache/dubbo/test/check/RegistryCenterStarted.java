@@ -32,6 +32,7 @@ public class RegistryCenterStarted extends AbstractRegistryCenterTestExecutionLi
         try {
             if (needRegistryCenter(testPlan)) {
                 GlobalRegistryCenter.startup();
+                System.out.println("Started the mock registry center.");
             }
         } catch (Throwable cause) {
             throw new IllegalStateException("Failed to start zookeeper instance in unit test", cause);
