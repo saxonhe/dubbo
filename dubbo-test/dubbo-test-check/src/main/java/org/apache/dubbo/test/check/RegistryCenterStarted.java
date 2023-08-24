@@ -47,6 +47,7 @@ public class RegistryCenterStarted extends AbstractRegistryCenterTestExecutionLi
             }
         } catch (Throwable cause) {
             // ignore the exception
+            System.out.println("Failed to reset the global registry center.");
         }
     }
 }
