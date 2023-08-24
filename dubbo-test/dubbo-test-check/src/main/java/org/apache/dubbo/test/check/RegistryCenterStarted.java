@@ -44,6 +44,7 @@ public class RegistryCenterStarted extends AbstractRegistryCenterTestExecutionLi
             if (needRegistryCenter(testIdentifier)) {
                 GlobalRegistryCenter.reset();
                 System.out.println("Reset the global registry center.");
+                System.exit(0);
             }
         } catch (Throwable cause) {
             // ignore the exception
